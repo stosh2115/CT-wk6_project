@@ -1,0 +1,4 @@
+.env
+pokemon_env
+__pycache__
+image_cache

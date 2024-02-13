@@ -1,0 +1,42 @@
+<form action="" method='POST' class="row g-3">
+    {{ form.hidden_tag() }}
+    <div class="col-12">
+        {{ form.name.label }}
+        {{ form.name(class='form-control mt-2', placeholder='Charmander') }}
+        {% for error in form.name.errors %}
+            <span class="err-msg">{{ error }}</span>
+        {% endfor %}
+    </div>
+    <div class="col-12">
+        {{ form.image.label }}
+        {{ form.image(class='form-control mt-2') }}
+    </div>
+    <div class="col-12">
+        {{ form.description.label }}
+        {{ form.description(class='form-control mt-2', placeholder='ready to breath flames') }}
+    </div>
+    <div class="col-12">
+        {{ form.type.label }}
+        {{ form.type(class='form-control mt-2', placeholder='Fire') }}
+        {% for error in form.type.errors %}
+            <span class="err-msg">{{ error }}</span>
+        {% endfor %}
+    </div>
+    <div class="col-12">
+        {{ form.ability.label }}
+        {{ form.ability(class='form-control mt-2', placeholder='flames') }}
+        {% for error in form.ability.errors %}
+            <span class="err-msg">{{ error }}</span>
+        {% endfor %}
+    </div>
+    <div class="col-12">
+        {{ form.height.label }}
+        {{ form.height(class='form-control mt-2', placeholder='2\'0\"') }}
+        {% for error in form.height.errors %}
+            <span class="err-msg">{{ error }}</span>
+        {% endfor %}
+    </div>
+    <div class="col-12">
+        {{ form.submit(class='btn btn-primary') }}
+    </div>
+</form>

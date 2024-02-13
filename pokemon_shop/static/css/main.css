@@ -1,0 +1,14 @@
+.shop-header{
+    background-image: url("https://wallpapers.com/images/hd/all-pokemon-pictures-bh730s8zr74xsc2p.jpg");
+    background-size: cover;
+    height: 850px;
+    color: black;
+    font-weight: 1000;
+    
+
+}
+
+.shop-stats {
+    color: red;
+
+}
